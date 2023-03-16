@@ -1,0 +1,18 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1269px;
+    margin: 0 auto;
+}
+
+.first-screen {
+    background: url("assets/images/first-screen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1097px;
+}
