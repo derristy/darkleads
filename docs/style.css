@@ -32,6 +32,10 @@
   padding: 0;
 }
 
+body:has(.modal.show) {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1309px;
@@ -97,6 +101,11 @@
   font-size: 30px;
   line-height: 30px;
   cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.first-screen__msg-btn:hover {
+  background: #FDA700;
+  color: #0D2B6D;
 }
 .first-screen__footer {
   margin-top: 131px;
@@ -141,6 +150,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.header-btn:hover {
+  background: #fff;
+  color: #FDA700;
 }
 .header-logo {
   display: flex;
@@ -154,9 +168,16 @@
   font-weight: 400;
   font-size: 20px;
   max-width: 213px;
+  transition: color 0.3s;
+}
+.header-logo__link:hover {
+  color: #FDA700;
 }
 .header-logo__svg {
   margin-right: 81px;
+}
+.header-logo__svg:hover .fill {
+  fill: #FDA700;
 }
 
 .row {
@@ -204,12 +225,16 @@
   background: #0D2B6D;
   border: none;
   color: #fff;
+  transition: background 0.3s;
+}
+.register-input:hover {
+  background: #11244d;
 }
 .register-input::placeholder {
   color: #fff;
 }
 .register-input:focus {
-  outline: none;
+  outline: 1px solid #FDA700;
 }
 .register-btn {
   width: 100%;
@@ -222,6 +247,10 @@
   font-size: 20px;
   line-height: 23px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+.register-btn:hover {
+  background: #bff109;
 }
 
 .play-video {
@@ -230,6 +259,9 @@
   justify-content: center;
   margin-bottom: 18px;
   cursor: pointer;
+}
+.play-video:hover .fill {
+  fill: red;
 }
 
 .problem {
@@ -255,6 +287,9 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+}
+.problem-arrow:hover .fill {
+  fill: #1952ce;
 }
 .problem-arrow svg {
   margin-top: 6px;
@@ -376,5 +411,51 @@
 }
 .soluzione-p2 {
   padding-right: 100px;
+}
+
+.modal {
+  display: none;
+  background: rgba(12, 7, 7, 0.37);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.modal.show {
+  display: flex;
+}
+.modal-dialog {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+}
+.modal-dialog iframe {
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+.modal-close {
+  background: #FDA700;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+.modal-close:hover {
+  opacity: 0.5;
+}
+
+path, circle {
+  transition: fill 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
