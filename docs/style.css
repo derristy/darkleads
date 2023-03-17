@@ -100,6 +100,25 @@
   background: #0D2B6D;
   padding: 48px 0;
 }
+.first-screen__footer-users {
+  display: flex;
+  flex-wrap: wrap;
+}
+.first-screen__footer-users__item {
+  display: inline-flex;
+  align-items: center;
+  flex-basis: 33.33%;
+}
+.first-screen__footer-users__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+.first-screen__footer-users__content {
+  margin-left: 20px;
+}
 
 .header {
   display: flex;

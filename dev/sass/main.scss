@@ -77,6 +77,29 @@
         margin-top: 131px;
         background: $secondary-color;
         padding: 48px 0;
+
+        &-users {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__item {
+                display: inline-flex;
+                align-items: center;
+                flex-basis: 33.33%;
+            }
+
+            &__text {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom: 4px;
+            }
+
+            &__content {
+                margin-left: 20px;
+            }
+        }
     }
 }
 
