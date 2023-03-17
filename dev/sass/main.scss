@@ -6,13 +6,115 @@
 
 .container {
     width: 100%;
-    max-width: 1269px;
+    max-width: 1309px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .first-screen {
     background: url("assets/images/first-screen.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 1097px;
+    color: $color-white;
+    position: relative;
+
+    &__title {
+        font-family: "Orchidea Pro", sans-serif;
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 50px;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        line-height: 35px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        max-width: 623px;
+    }
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 62px;
+    margin-bottom: 100px;
+
+    &-btn {
+        color: $primary-color;
+        border: 1px dashed $primary-color;
+        border-radius: 10px;
+        background: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        line-height: 23px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-col-1 {
+    flex-basis: 59%;
+}
+
+.first-col-2 {
+    flex-basis: 41%;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.register {
+    background: rgba(13, 43, 109, 0.8);
+    border-radius: 10px;
+    padding: 50px 45px;
+
+    &-title {
+        text-align: center;
+        color: $primary-color;
+        font-family: "Orchidea Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &-input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 16px 0 16px 19px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        background: $secondary-color;
+        border: none;
+
+        &::placeholder {
+            color: $color-white;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.play-video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 18px;
 }
