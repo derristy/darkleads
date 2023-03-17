@@ -1,0 +1,139 @@
+@media (max-width: 1200px){
+    .first-screen {
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+
+        &__msg {
+            &-text {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .problem {
+        &-content {
+            padding: 20px;
+        }
+    }
+
+    .first-col-1 {
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .first-col-1, .first-col-2 {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 991px){
+    .problem {
+        &-item {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .first-screen {
+        &__footer {
+            &-users {
+                &__item {
+                    flex-basis: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                }
+                
+                &__avatar {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .first-screen {
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        &__subtitle {
+            font-size: 30px;
+        }
+
+        &__msg {
+            flex-direction: column;
+
+            &-img {
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                margin-bottom: 10px;
+            }
+
+            &-btn {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        margin-bottom: 50px;
+
+        &-logo {
+            flex-direction: column;
+
+            &__svg {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            &__link {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .first-screen {
+        &__title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            max-width: 450px;
+        }
+    }
+
+    .problem {
+        &-title {
+            font-size: 40px;
+        }
+    }
+
+    .soluzione {
+        &-title {
+            font-size: 40px;
+        }
+    }
+
+    .register {
+        &-title {
+            font-size: 20px;
+        }
+    }
+}
