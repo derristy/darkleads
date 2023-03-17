@@ -44,7 +44,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1097px;
   color: #fff;
   position: relative;
 }
@@ -62,6 +61,44 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   max-width: 623px;
+  flex-grow: 1;
+}
+.first-screen__msg {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 13px;
+  display: inline-flex;
+  align-items: center;
+  max-width: 660px;
+}
+.first-screen__msg-img {
+  margin-right: 16px;
+}
+.first-screen__msg-text {
+  max-width: 379px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #373737;
+}
+.first-screen__msg-btn {
+  color: #FDA700;
+  background: #0D2B6D;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  margin-left: auto;
+  font-family: "Orchidea Pro", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.first-screen__footer {
+  margin-top: 131px;
+  background: #0D2B6D;
+  padding: 48px 0;
 }
 
 .header {
@@ -81,6 +118,23 @@
   line-height: 23px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  cursor: pointer;
+}
+.header-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header-logo__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 213px;
+}
+.header-logo__svg {
+  margin-right: 81px;
 }
 
 .row {
@@ -90,6 +144,8 @@
 
 .first-col-1 {
   flex-basis: 59%;
+  display: flex;
+  flex-direction: column;
 }
 
 .first-col-2 {
@@ -125,6 +181,7 @@
   font-weight: 300;
   background: #0D2B6D;
   border: none;
+  color: #fff;
 }
 .register-input::placeholder {
   color: #fff;
@@ -132,11 +189,24 @@
 .register-input:focus {
   outline: none;
 }
+.register-btn {
+  width: 100%;
+  background: #FDA700;
+  border: none;
+  padding: 18px 0;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  cursor: pointer;
+}
 
 .play-video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 18px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
