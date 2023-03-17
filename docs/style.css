@@ -241,6 +241,22 @@
   box-shadow: 4px 4px 4px rgba(83, 83, 83, 0.25);
   border-radius: 10px;
   padding: 60px 70px;
+  position: relative;
+}
+.problem-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+  width: 95px;
+  height: 90px;
+  border-radius: 100%;
+  background: #D9D9D9;
+  display: flex;
+  justify-content: center;
+}
+.problem-arrow svg {
+  margin-top: 6px;
 }
 .problem-title {
   font-family: "Orchidea Pro", sans-serif;
